@@ -43,4 +43,4 @@ models:
     # Applies to all files under models/example/
     example:
       +schema: example
-      +materialized: table
+      +materialized: view
