@@ -1,9 +1,19 @@
 
 version: 2
+groups:
+  - name: example_models
+    owner:
+      name: Customer Success Team
+      email: cx@jaffle.shop
+
 
 models:
     - name: my_first_dbt_model
       description: "A starter dbt model"
+      access: private
+      config:
+        group: example_models
+
       columns:
           - name: id
             description: "The primary key for this table"
